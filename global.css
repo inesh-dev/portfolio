@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-primary: #0a0e27;
+  --bg-card: #1a1f3a;
+  --text-primary: #e8e8e8;
+  --text-secondary: #b8b8b8;
+  --accent-blue: #5b8de8;
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 15px 50px rgba(0, 0, 0, 0.4);
+  --max-width: 1200px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  all: unset;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  all: unset;
+  display: block;
+  font-family: "Inter", sans-serif;
+}
+
+ul,
+li {
+  all: unset;
+  list-style: none;
+}
+
+/* Subtle fade-in animation on scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
